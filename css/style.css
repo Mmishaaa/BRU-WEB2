@@ -988,6 +988,7 @@ footer {
         font-size: 1.3rem;
     }
     .model__link {
+        right: 6%;
         font-size: 2.6rem;
         width: 200px;
     }
@@ -1017,6 +1018,13 @@ footer {
     }
     .inspirations__block {
         gap: 40px;
+    }
+    .products {
+        padding-top: 120px;
+        padding-bottom: 46px;
+    }
+    .description-block {
+        gap: 29px;
     }
 }
 
@@ -1179,5 +1187,18 @@ footer {
     }
     .model__price {
         font-size: 1.6rem;
+    }
+    .card__content {
+        padding-top: 12px;
+        gap: 9px;
+    }
+    footer {
+        padding-top: 10px;
+    }
+    .model__link {
+        right: 8%;
+    }
+    .products {
+        padding-top: 100px;
     }
 }
