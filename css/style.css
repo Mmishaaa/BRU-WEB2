@@ -40,6 +40,9 @@ main {
     max-width: 1237px;
     margin: 0 auto;
 }
+.container svg {
+    width: 100%;
+}
 
 .menu__btn {
     width: 30px;
@@ -304,6 +307,9 @@ main {
     gap: 32px;
     margin-bottom: 32px;
 }
+.tabs__content img {
+    width: 100%;
+}
 .card__content {
     display: flex;
     flex-direction: column;
@@ -366,7 +372,7 @@ main {
     position: absolute;
     top: 40%;
     left: 14%;
-    width: 100%;
+    width: 100px;
     height: 100%;
     opacity: 0.72;
 }
@@ -829,6 +835,10 @@ footer {
         width: 200px;
         height: 300px;
     }
+    /* .furniture__block img {
+        width: 100%;
+    } */
+
     .furniture__block img:nth-child(1) {
         position: relative;
         top: 0;
