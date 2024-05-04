@@ -9,6 +9,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css" />
+        <link rel="icon" sizes="32x32" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="./js/index.js" defer></script>
     </head>
     <body>
         <div class="wrapper">
@@ -18,7 +21,6 @@
                         <div class="nav-label">
                             <p>Funiro.</p>
                         </div>
-
                         <div class="nav-items">
                             <div class="menu-list">
                                 <p class="nav-item margin-right">Products</p>
@@ -62,11 +64,45 @@
                             <img src="./assets//png/Search.png" alt="" />
                             <input type="text" class="search-input" placeholder="Search for minimalist chair" />
                         </div>
-                        <button class="menu__btn">
+                        <!-- <button class="menu__btn">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </button>
+                        </button> -->
+                        <div class="burger">
+                            <div class="burger_line"></div>
+                            <div class="burger_line"></div>
+                        </div>
+                        <div class="burger_menu">
+                            <nav class="burger_menu_links">
+                                <ul>
+                                    <li class="nav_item">
+                                        <a class="nav_items_text" href="#Products">Products</a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a class="nav_items_text" href="">Rooms</a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a class="nav_items_text" href="#Inspirations">Inspirations</a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a class="nav_items_text" href="#Furniture">Furniture</a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a class="nav_items_text" href="#statements">Likes</a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a class="nav_items_text" href="#See">Cart</a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a class="nav_items_text" href="#See">Profile</a>
+                                    </li>
+                                    <li class="nav_item">
+                                        <a class="nav_items_text" href="#AboutUs">About us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                         <div class="nav-images">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -330,12 +366,12 @@
                         </div>
                     </div>
                 </section>
-                <section class="products">
+                <section class="products" id="Products">
                     <div class="container">
-                        <h2 class="section__title products__title">Our Products</h2>
+                        <h2 class="section__title products__title anim">Our Products</h2>
                         <div class="tabs">
                             <div class="tabs__content">
-                                <div class="card">
+                                <div class="card anim">
                                     <img src="./assets//png/image-1.png" alt="" />
                                     <div class="card__content">
                                         <h5 class="card-title">Syltherine</h5>
@@ -349,7 +385,7 @@
                                         <p>-30%</p>
                                     </div>
                                 </div>
-                                <div class="card card__hover">
+                                <div class="card card__hover anim">
                                     <img src="./assets//png/image-2.png" alt="" />
                                     <div class="card__content">
                                         <h5 class="card-title">Leviosa</h5>
@@ -399,7 +435,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card anim">
                                     <img src="./assets//png/image-3.png" alt="" />
                                     <div class="card__content">
                                         <h5 class="card-title">Lolito</h5>
@@ -413,7 +449,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card anim">
                                     <img src="./assets//png/image-4.png" alt="" />
                                     <div class="card__content">
                                         <h5 class="card-title">Respira</h5>
@@ -426,7 +462,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card anim">
                                     <img src="./assets//png/image-5.png" alt="" />
                                     <div class="card__content">
                                         <h5 class="card-title">Grifo</h5>
@@ -436,7 +472,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card anim">
                                     <img src="./assets//png/image-6.png" alt="" />
                                     <div class="card__content">
                                         <h5 class="card-title">Muggo</h5>
@@ -449,7 +485,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card anim">
                                     <img src="./assets//png/image-7.png" alt="" />
                                     <div class="card__content">
                                         <h5 class="card-title">Pingky</h5>
@@ -463,7 +499,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card anim">
                                     <img src="./assets//png/image-8.png" alt="" />
                                     <div class="card__content">
                                         <h5 class="card-title">Potty</h5>
@@ -481,7 +517,7 @@
                         <a href="#" class="show__more-link">Show More</a>
                     </div>
                 </section>
-                <section class="inspirations">
+                <section class="inspirations" id="Inspirations">
                     <div class="container">
                         <div class="inspirations__block">
                             <div class="inspirations__description">
@@ -606,7 +642,7 @@
                 </section>
                 <section class="tips">
                     <div class="container">
-                        <h4 class="section__title section__tips-title">Tips & Tricks</h4>
+                        <h4 class="section__title section__tips-title anim">Tips & Tricks</h4>
                         <div class="tips__block">
                             <div class="tips__item">
                                 <img src="./assets/png/tip1.png" alt="" />
@@ -633,7 +669,25 @@
                                     <div class="tips__subtitle">20 jan 2020</div>
                                 </div>
                             </div>
-                            <div class="navigation-item next tips-next tips-next invisible">
+                            <div class="tips__item">
+                                <img src="./assets/png/tip2.png" alt="" />
+                                <div class="tips__item-description">
+                                    <h5 class="tips__title" style="max-width: 304px">
+                                        Make your cooking activity more fun with good setup
+                                    </h5>
+                                    <div class="tips__subtitle">20 jan 2020</div>
+                                </div>
+                            </div>
+                            <div class="tips__item">
+                                <img src="./assets/png/tip1.png" alt="" />
+                                <div class="tips__item-description">
+                                    <h5 class="tips__title" style="max-width: 304px">
+                                        Make your cooking activity more fun with good setup
+                                    </h5>
+                                    <div class="tips__subtitle">20 jan 2020</div>
+                                </div>
+                            </div>
+                            <!-- <div class="navigation-item next tips-next tips-next invisible">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="24"
@@ -666,7 +720,7 @@
                                         stroke-linejoin="round"
                                     />
                                 </svg>
-                            </div>
+                            </div> -->
                         </div>
                         <div style="display: none" class="pagination">
                             <div class="navigation-item prev tips-prev">
@@ -704,7 +758,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="slider-controllers tips__controllers">
+                        <!-- <div class="slider-controllers tips__controllers">
                             <div class="indecators">
                                 <div class="indecator">
                                     <svg
@@ -752,12 +806,12 @@
                                     </svg>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
-                <section class="funiro-furniture">
+                <section class="funiro-furniture" id="Furniture">
                     <p>Share your setup with</p>
-                    <h2 class="section__title">#FuniroFurniture</h2>
+                    <h2 class="section__title anim">#FuniroFurniture</h2>
                     <div class="furniture__images">
                         <div class="furniture__block">
                             <img src="./assets/png/img-1.png" alt="" />
@@ -772,13 +826,39 @@
                         </div>
                     </div>
                 </section>
+                <section class="player__section">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1237" height="2" viewBox="0 0 1237 2" fill="none">
+                        <path d="M0 1H1237" stroke="#D8D8D8" />
+                    </svg>
+                    <div class="player__block">
+                        <div class="player">
+                            <h1>Аудиоплеер</h1>
+                            <button id="play-pause-button" onclick="togglePlayPause()">Play</button>
+                            <br />
+                            <img id="image" src="./assets//png/image-1.png" alt="Изображение" />
+                            <br />
+                            <audio id="audio" src="./audio/Sound.mp3" controls></audio>
+                        </div>
+                        <div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.3343513944715!2d30.341416012809376!3d53.90803427234264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d051e21c08086b%3A0x342bdbdd2dc821f8!2z0JHQtdC70L7RgNGD0YHRgdC60L4t0KDQvtGB0YHQuNC50YHQutC40Lkg0YPQvdC40LLQtdGA0YHQuNGC0LXRgg!5e0!3m2!1sru!2sby!4v1714602005813!5m2!1sru!2sby"
+                                width="100%"
+                                height="450"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer>
                 <div class="container">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1237" height="2" viewBox="0 0 1237 2" fill="none">
                         <path d="M0 1H1237" stroke="#D8D8D8" />
                     </svg>
-                    <div class="footer__block">
+                    <div class="footer__block" id="AboutUs">
                         <div class="footer__label">
                             <div class="footer__description">
                                 <p class="footer__label-title">Funiro.</p>
@@ -899,6 +979,13 @@
                                             fill="white"
                                         />
                                     </svg>
+                                    <!-- <img
+                                        src="./assets/png/secondIcon.png"
+                                        alt="icon"
+                                        class="second_icon"
+                                        width="285"
+                                        height="157"
+                                    /> -->
                                 </button>
                             </div>
                         </div>
@@ -906,5 +993,17 @@
                 </div>
             </footer>
         </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+
+        <script type="text/javascript">
+            $(".tips__block").slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true,
+            });
+        </script>
     </body>
 </html>
